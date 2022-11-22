@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity() {
         tabLayout = findViewById(R.id.tabLayout)
         viewPager = findViewById(R.id.viewPager)
         tabLayout.addTab(tabLayout.newTab().setText("Home"))
-        tabLayout.addTab(tabLayout.newTab().setText("Profile"))
-        tabLayout.addTab(tabLayout.newTab().setText("Settings"))
+        tabLayout.addTab(tabLayout.newTab().setText("Status"))
+        tabLayout.addTab(tabLayout.newTab().setText("Contact"))
         tabLayout.tabGravity = TabLayout.GRAVITY_FILL
 
         val adapter = MyAdapter(this, supportFragmentManager,

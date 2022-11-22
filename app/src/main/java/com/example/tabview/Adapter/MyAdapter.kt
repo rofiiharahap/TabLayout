@@ -5,8 +5,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.example.tabview.Fragments.Home
-import com.example.tabview.Fragments.Profile
-import com.example.tabview.Fragments.Settings
+import com.example.tabview.Fragments.Status
+import com.example.tabview.Fragments.Contact
 
 internal class MyAdapter(var context: Context, fm: FragmentManager, var totalTabs: Int): FragmentPagerAdapter(fm) {
 
@@ -16,10 +16,10 @@ internal class MyAdapter(var context: Context, fm: FragmentManager, var totalTab
                 Home()
             }
             1 -> {
-                Profile()
+                Status()
             }
             2 -> {
-                Settings()
+                Contact()
             }
             else -> getItem(position)
         }
